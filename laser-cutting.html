@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Endee Engineering </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic%7CLato:300,300italic,400,400italic,700,900%7CMerriweather:700italic">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/laser-cutting.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <section class="laser-section">
+
+        <!-- TOP CONTENT -->
+        <div class="laser-top">
+
+            <div class="laser-text">
+                <span class="laser-eyebrow">Laser Cutting</span>
+                <h2>CNC Laser Machine - 10kW</h2>
+                <p class="laser-sub">
+                    Laser Cutting Capabilities: Versatility at Its Best
+                </p>
+
+                <ul class="laser-points">
+                    <li>
+                        Compared to traditional mechanical tooling and acid etching,
+                        laser cutting offers unparalleled efficiency, accuracy, and
+                        cost-effectiveness.
+                    </li>
+                    <li>
+                        This advanced process employs a high-precision laser beam to melt,
+                        vaporise, or flame away excess material, yielding a smooth,
+                        burr-free edge.
+                    </li>
+                    <li>
+                        The versatility of laser cutting extends to a wide range of
+                        materials and thicknesses.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="laser-machine">
+                <img src="images/laser-cutting/laser-machine.png" alt="Laser Cutting Machine">
+            </div>
+
+        </div>
+
+        <!-- HIGHLIGHTS -->
+        <div class="laser-highlights">
+            <div class="highlight">
+                <h4>A Game-Changer in<br>Precision Fabrication</h4>
+                <p>
+                    Our experienced team delivers end-to-end rental support, from equipment
+                    selection to on-site maintenance, ensuring a seamless experience.
+                </p>
+            </div>
+
+            <div class="highlight">
+                <h4>Expert Laser Cutting<br>Services</h4>
+                <p>
+                    We ensure every component meets the highest standards of precision and
+                    finish through uncompromising quality and attention to detail.
+                </p>
+            </div>
+
+            <div class="highlight">
+                <h4>Rapid Prototyping<br>and Production</h4>
+                <p>
+                    Our advanced machinery enables efficient prototype fabrication for
+                    review and testing before full-scale production.
+                </p>
+            </div>
+        </div>
+
+        <!-- BOTTOM SECTION -->
+        <div class="laser-bottom">
+
+            <!-- WOW SLIDER -->
+            <div class="laser-slider">
+                <div class="slides">
+                    <img src="images/slide1.jpg" class="slide active">
+                    <img src="images/slide2.jpg" class="slide">
+                    <img src="images/slide3.jpg" class="slide">
+                </div>
+
+                <button class="nav prev">‹</button>
+                <button class="nav next">›</button>
+            </div>
+
+            <!-- CAPABILITIES -->
+            <div class="laser-capabilities">
+                <h3>Quality metalwork for lasting Performance</h3>
+
+                <ul>
+                    <li>Mild Steel: up to 25mm thick</li>
+                    <li>Stainless Steel: up to 14mm thick</li>
+                    <li>Aluminium: up to 14mm thick</li>
+                    <li>Brass Iron: up to 10mm thick</li>
+                    <li>Copper Iron: up to 6mm thick</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div id="footer"></div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Load Header
+        fetch("common/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("common/footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <!-- Custom JS -->
+    <script src="js/laser-cutting.js"></script>
+</body>
+
+</html>

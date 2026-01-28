@@ -1,0 +1,132 @@
+/* ================= CNC SECTION ================= */
+.cnc-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 24px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* TOP */
+.cnc-eyebrow {
+  color: #f7b500;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.cnc-spec {
+  margin: 6px 0 26px;
+  font-size: 14px;
+  color: #666;
+}
+
+.cnc-points {
+  max-width: 900px;
+  padding-left: 18px;
+}
+
+.cnc-points li {
+  margin-bottom: 14px;
+  line-height: 1.65;
+}
+
+.highlight {
+  color: #f7b500;
+  font-weight: 600;
+}
+
+/* HIGHLIGHTS */
+.cnc-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fff6e8;
+  padding: 50px;
+  margin: 80px 0 100px;
+  gap: 40px;
+  text-align: center;
+}
+
+.cnc-card h4 {
+  color: #f7b500;
+  margin-bottom: 10px;
+}
+
+.cnc-card p {
+  font-size: 14.5px;
+  color: #444;
+}
+
+/* BOTTOM */
+.cnc-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.cnc-details h3 {
+  margin-bottom: 18px;
+}
+
+.cnc-details h4 {
+  margin-top: 24px;
+}
+
+.cnc-details ul {
+  padding-left: 18px;
+}
+
+.cnc-details li {
+  margin-bottom: 10px;
+}
+
+/* SLIDER */
+.cnc-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.14);
+}
+
+.slides {
+  height: 320px;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Slider buttons */
+.nav {
+  position: absolute;
+  bottom: 14px;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.prev { left: 14px; }
+.next { right: 14px; }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .cnc-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .cnc-bottom {
+    grid-template-columns: 1fr;
+  }
+}

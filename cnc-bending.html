@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Endee Engineering </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic%7CLato:300,300italic,400,400italic,700,900%7CMerriweather:700italic">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cnc-bending.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <section class="cnc-section">
+
+        <!-- TOP -->
+        <div class="cnc-top">
+            <span class="cnc-eyebrow">CNC Bending</span>
+            <p class="cnc-spec">3 METERS | Machine working size</p>
+
+            <ul class="cnc-points">
+                <li>
+                    We deliver exceptional productivity, repeatability, and precision.
+                    Our machines manufacture high-quality bent tubes for diverse
+                    applications across industries including
+                    <span class="highlight">
+                        Automotive | Chemical | Furniture | Shipbuilding | Railways | Construction
+                    </span>
+                </li>
+                <li>
+                    Our skilled team of CNC Press Brake operators and programmers
+                    prioritize quality and material care, ensuring exceptional results
+                    with advanced machinery.
+                </li>
+            </ul>
+        </div>
+
+        <!-- HIGHLIGHTS -->
+        <div class="cnc-highlights">
+            <div class="cnc-card">
+                <h4>High Productivity</h4>
+                <p>1.3x table speed and 3x back gauge speed</p>
+            </div>
+
+            <div class="cnc-card">
+                <h4>Efficient Programming</h4>
+                <p>
+                    Utilizing up-to-date software with easy programming,
+                    direct angle mode, and advanced bend deduction calculations
+                </p>
+            </div>
+
+            <div class="cnc-card">
+                <h4>Enhanced Functionality</h4>
+                <p>
+                    Adjustable height tools, supporters, and collision
+                    detection for optimized bending processes
+                </p>
+            </div>
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="cnc-bottom">
+
+            <!-- LEFT CONTENT -->
+            <div class="cnc-details">
+                <h3>Operational Excellence</h3>
+
+                <ul>
+                    <li>
+                        Comprehensive training for operators through regular workshops
+                        to update skills on new technologies and techniques
+                    </li>
+                </ul>
+
+                <h4>Manufacturing Plants boast:</h4>
+                <ul>
+                    <li>100 Tons Ram capacity</li>
+                    <li>3-meter length capability</li>
+                </ul>
+
+                <h4>Bending Capabilities:</h4>
+                <ul>
+                    <li>Mild Steel: up to 10 mm thickness</li>
+                    <li>Stainless Steel: up to 4 mm thickness</li>
+                </ul>
+            </div>
+
+            <!-- IMAGE SLIDER -->
+            <div class="cnc-slider">
+                <div class="slides">
+                    <img src="images/bend1.jpg" class="slide active">
+                    <img src="images/bend2.jpg" class="slide">
+                    <img src="images/bend3.jpg" class="slide">
+                </div>
+
+                <button class="nav prev">Previous</button>
+                <button class="nav next">Next</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div id="footer"></div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Load Header
+        fetch("common/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("common/footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <!-- Custom JS -->
+    <script src="js/cnc-bending.js"></script>
+</body>
+
+</html>

@@ -2,28 +2,38 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
 
-      <!-- LEFT: Logo + Text -->
-      <div class="d-flex align-items-center">
-        <a href="#" class="navbar-brand p-0 me-2">
-          <img src="images/logo.png" alt="Endee Logo" class="header-logo">
-        </a>
-        <span class="brand-text">
-          Endee Infrastructure & Engineering Pvt. Ltd.
-        </span>
-      </div>
+      <!-- LOGO + TEXT -->
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Endee Logo">
+        <span class="brand-text">Endee Infrastructure & Engineering Pvt. Ltd.</span>
+      </a>
 
-      <!-- RIGHT: Toggle -->
-      <button class="navbar-toggler ms-auto" type="button"
-              data-bs-toggle="collapse" data-bs-target="#endeeNav">
+      <!-- TOGGLER -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#endeeNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Menu -->
+      <!-- NAV -->
       <div class="collapse navbar-collapse justify-content-end" id="endeeNav">
-        <ul class="navbar-nav gap-lg-4">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">What We Do</a></li>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="../main.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle custom-caret" href="#"
+              id="whatWeDoDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              What We Do
+              <span class="caret-icon"></span>
+            </a>
+
+            <ul class="dropdown-menu custom-dropdown" aria-labelledby="whatWeDoDropdown">
+              <li><a class="dropdown-item active" href="../laser-cutting.html">Laser Cutting</a></li>
+              <li><a class="dropdown-item" href="../cnc-bending.html">Sheet Bending</a></li>
+              <li><a class="dropdown-item" href="#">Welding</a></li>
+              <li><a class="dropdown-item" href="#">Surface Coating &amp; Finishing</a></li>
+            </ul>
+          </li>
+
           <li class="nav-item"><a class="nav-link" href="#">Application</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Franchise Model</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>

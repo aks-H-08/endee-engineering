@@ -1,5 +1,5 @@
 /* ============================================================
-   ENDEE HERO SPLIT (Responsive Enhanced)
+   ENDEE HERO SPLIT 
 ============================================================ */
 
 /* Fix white gaps */
@@ -42,7 +42,7 @@ body {
 .endeeHero__bg {
   position: absolute;
   inset: 0;
-  background: url("../images/main_bg.jpg") center / cover no-repeat;
+  background: url("../images/main_background.jpg") center / cover no-repeat;
   z-index: 0;
 
   transform: scale(1.08);

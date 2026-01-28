@@ -1,0 +1,149 @@
+/* ================= LASER SECTION ================= */
+.laser-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 24px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* TOP */
+.laser-top {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.laser-eyebrow {
+  color: #f7b500;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.laser-text h2 {
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.laser-sub {
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.laser-points {
+  padding-left: 18px;
+}
+
+.laser-points li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.laser-machine img {
+  width: 100%;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* HIGHLIGHTS */
+.laser-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #fff6e8;
+  padding: 40px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.highlight h4 {
+  color: #f7b500;
+  margin-bottom: 10px;
+}
+
+.highlight p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* BOTTOM */
+.laser-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* ================= SLIDER ================= */
+.laser-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.slides {
+  position: relative;
+  height: 320px;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* slider nav */
+.nav {
+  position: absolute;
+  bottom: 14px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.prev { left: 14px; }
+.next { right: 14px; }
+
+/* CAPABILITIES */
+.laser-capabilities h3 {
+  margin-bottom: 18px;
+}
+
+.laser-capabilities ul {
+  padding-left: 18px;
+}
+
+.laser-capabilities li {
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .laser-top,
+  .laser-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .laser-highlights {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

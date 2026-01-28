@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Endee Engineering </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic%7CLato:300,300italic,400,400italic,700,900%7CMerriweather:700italic">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <section class="cc-about">
+
+        <!-- BLOCK 1 -->
+        <div class="cc-block">
+            <div class="cc-media">
+                <img src="images/about/about-site.png" alt="Construction site">
+            </div>
+
+            <div class="cc-text">
+                <span class="cc-eyebrow">About Us</span>
+                <p>
+                    At Endee Engineering, we specialize in delivering high-precision sheet metal
+                    fabrication and advanced surface finishing solutions for industrial and
+                    commercial applications. Backed by modern machinery, skilled professionals,
+                    and strict quality control, we transform raw metal into reliable,
+                    ready-to-use components.
+                </p>
+
+                <p class="cc-highlight">
+                    We don’t just fabricate metal — we engineer
+                    <strong>accuracy, strength, and durability.</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- BLOCK 2 -->
+        <div class="cc-block reverse">
+            <div class="cc-text">
+                <span class="cc-eyebrow">Our Core Capabilities</span>
+
+                <ul class="cc-list">
+                    <li>
+                        <h4>Laser Cutting</h4>
+                        <p>High-speed, high-accuracy cutting for complex profiles and tight tolerances.</p>
+                    </li>
+
+                    <li>
+                        <h4>CNC Bending &amp; Forming</h4>
+                        <p>Precision bending to achieve consistent shapes, angles, and dimensions.</p>
+                    </li>
+
+                    <li>
+                        <h4>Welding &amp; Assembly</h4>
+                        <p>Expert MIG, TIG, and structural welding for strength and long-term performance.</p>
+                    </li>
+
+                    <li>
+                        <h4>Sheet Metal Fabrication</h4>
+                        <p>End-to-end fabrication from prototyping to batch production.</p>
+                    </li>
+
+                    <li>
+                        <h4>Painting &amp; Surface Finishing</h4>
+                        <p>Powder coating and protective finishes for corrosion resistance.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cc-media">
+                <img src="images/about/engineering-tech.png" alt="Engineering technology">
+            </div>
+        </div>
+
+    </section>
+
+
+    <div id="footer"></div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Load Header
+        fetch("common/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("common/footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
