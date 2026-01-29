@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Endee Engineering </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic%7CLato:300,300italic,400,400italic,700,900%7CMerriweather:700italic">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/franchise-model.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="franchise-wrapper">
+
+        <div class="franchise-intro">
+            <h2>Franchise</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="franchise-layout">
+
+            <!-- FORM -->
+            <div class="form-card">
+
+                <div class="progress-header">
+                    <span class="step-text" id="stepText">1 of 7 steps completed</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <!-- STEP 1 -->
+                <div class="step active">
+                    <h3>Applicant Details</h3>
+                    <label>Applicant / Firm Name</label>
+                    <input required>
+
+                    <label>Entity Type</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="entity" required> Proprietorship</label>
+                        <label><input type="radio" name="entity"> Partnership</label>
+                        <label><input type="radio" name="entity"> LLP</label>
+                        <label><input type="radio" name="entity"> Pvt Ltd</label>
+                    </div>
+
+                    <label>Contact Person</label>
+                    <input required>
+
+                    <label>Mobile</label>
+                    <input type="tel" required>
+
+                    <label>Email</label>
+                    <input type="email" required>
+
+                    <label>Office Address</label>
+                    <input required>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="step">
+                    <h3>Land & Location Details</h3>
+                    <label>Land Ownership</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="land" required> Owned</label>
+                        <label><input type="radio" name="land"> Leased</label>
+                        <label><input type="radio" name="land"> Rental</label>
+                    </div>
+
+                    <label>Total Land Area (sqft)</label>
+                    <input required>
+
+                    <label>Location Address</label>
+                    <input required>
+
+                    <label>Industrial Zoning</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="zoning" required> Yes</label>
+                        <label><input type="radio" name="zoning"> No</label>
+                        <label><input type="radio" name="zoning"> In Process</label>
+                    </div>
+
+                    <label>Road Access for Heavy Vehicles</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="road" required> Yes</label>
+                        <label><input type="radio" name="road"> No</label>
+                    </div>
+
+                    <label>Clear Height (ft)</label>
+                    <input required>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="step">
+                    <h3>Infrastructure & Utilities</h3>
+                    <label>Electricity Available</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="power" required> Yes</label>
+                        <label><input type="radio" name="power"> No</label>
+                    </div>
+
+                    <label>Sanctioned Load (kVA)</label>
+                    <input required>
+
+                    <label>Air Compressor Capacity</label>
+                    <input required>
+
+                    <label>UPS / Power Backup (kVA)</label>
+                    <input required>
+
+                    <label>DG Set Capacity</label>
+                    <input required>
+
+                    <label>Forklift Available</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="forklift" required> Yes</label>
+                        <label><input type="radio" name="forklift"> No</label>
+                    </div>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="step">
+                    <h3>Experience & Background</h3>
+                    <label>Industry Experience (Years)</label>
+                    <input required>
+
+                    <label>Current Business</label>
+                    <input required>
+
+                    <label>Relevant Engineering / Fabrication Experience</label>
+                    <textarea required></textarea>
+                </div>
+
+                <!-- STEP 5 -->
+                <div class="step">
+                    <h3>Financial Capability</h3>
+                    <label>Annual Turnover</label>
+                    <input required>
+
+                    <label>Proposed Investment</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="investment" required> 50L–1Cr</label>
+                        <label><input type="radio" name="investment"> 1Cr–2Cr</label>
+                        <label><input type="radio" name="investment"> 2Cr+</label>
+                    </div>
+
+                    <label>Funding Source</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="fund" required> Own Funds</label>
+                        <label><input type="radio" name="fund"> Bank Loan</label>
+                        <label><input type="radio" name="fund"> Both</label>
+                    </div>
+                </div>
+
+                <!-- STEP 6 -->
+                <div class="step">
+                    <h3>Manpower Availability</h3>
+                    <label>Skilled Workers Available?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="workers" required> Yes</label>
+                        <label><input type="radio" name="workers"> No</label>
+                    </div>
+
+                    <label>Supervisory / Technical Staff?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="staff" required> Yes</label>
+                        <label><input type="radio" name="staff"> No</label>
+                    </div>
+
+                    <label>Willing to Train as per SOPs?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="train" required> Yes</label>
+                        <label><input type="radio" name="train"> No</label>
+                    </div>
+                </div>
+
+                <!-- STEP 7 -->
+                <div class="step">
+                    <h3>Franchise Scoring & Evaluation</h3>
+
+                    <div class="upload-list">
+                        <div class="upload-item">Land Document (Required)</div>
+                        <div class="upload-item">EB Bill (Required)</div>
+                        <div class="upload-item">Factory Photos (Required)</div>
+                        <div class="upload-item">Road Access Photos (Required)</div>
+                    </div>
+
+                    <label>Final Remarks</label>
+                    <textarea required></textarea>
+
+                    <label>
+                        <input type="checkbox" required>
+                        I declare that the above information is true and correct
+                    </label>
+                </div>
+
+                <!-- NAV -->
+                <div class="nav-buttons">
+                    <button class="btn btn-back" onclick="prevStep()" disabled>Back</button>
+                    <button class="btn btn-next" onclick="nextStep()">Next</button>
+                </div>
+
+            </div>
+
+            <!-- GUIDELINES -->
+            <div class="guidelines">
+                <h3>Guidelines</h3>
+                <p>Minimum infrastructure and land requirements must be met.</p>
+                <p>Compliance with safety and operational SOPs is mandatory.</p>
+                <p>All submitted documents must be valid and verifiable.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Load Header
+        fetch("common/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("common/footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <script src="js/franchise-model.js"></script>
+</body>
+
+</html>

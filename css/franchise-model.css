@@ -1,0 +1,156 @@
+/* ================= WRAPPER ================= */
+.franchise-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 24px 120px;
+}
+
+/* INTRO */
+.franchise-intro h2 {
+  color: #f7b500;
+  margin-bottom: 10px;
+}
+.franchise-intro p {
+  max-width: 720px;
+  color: #444;
+}
+
+/* LAYOUT */
+.franchise-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* FORM CARD */
+.form-card {
+  background: #fff9ec;
+  border: 1px solid #f1b24b;
+  border-radius: 10px;
+  padding: 32px;
+}
+
+/* PROGRESS */
+.progress-header {
+  margin-bottom: 28px;
+}
+.step-text {
+  font-weight: 600;
+  font-size: 14px;
+}
+.progress-bar {
+  height: 8px;
+  background: #e4ded6;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.progress-fill {
+  height: 100%;
+  width: 14%;
+  background: #e39a10;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+/* STEP */
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+
+/* FORM ELEMENTS */
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 14px 0 6px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+input:invalid, textarea:invalid {
+  border-color: #e06666;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* NAV BUTTONS */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-next {
+  background: #e39a10;
+  color: #fff;
+}
+
+.btn-back {
+  background: #cfc6b8;
+  color: #333;
+}
+
+.btn-back:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* GUIDELINES */
+.guidelines h3 {
+  color: #f7b500;
+  margin-bottom: 16px;
+}
+.guidelines p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+/* UPLOADS */
+.upload-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.upload-item {
+  background: #ffeac3;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .franchise-layout {
+    grid-template-columns: 1fr;
+  }
+}
