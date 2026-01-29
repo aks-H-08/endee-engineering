@@ -49,3 +49,60 @@ function updateUI() {
   backBtn.disabled = currentStep === 0;
   nextBtn.innerText = currentStep === totalSteps - 1 ? 'Submit' : 'Next';
 }
+
+document.querySelectorAll('.upload-row').forEach(row => {
+  const input = row.querySelector('input[type="file"]');
+  const btn = row.querySelector('.upload-pill');
+  const sizeText = row.querySelector('.file-size');
+  const remove = row.querySelector('.remove-file');
+
+  btn.onclick = () => input.click();
+
+  input.onchange = () => {
+    const file = input.files[0];
+    if (!file) return;
+
+    const sizeMB = file.size / (1024 * 1024);
+
+    sizeText.textContent = `${sizeMB.toFixed(1)} MB`;
+
+    if (sizeMB > 2) {
+      row.classList.add('error');
+      row.classList.remove('success');
+      alert('File size must be 2 MB or less');
+      input.value = '';
+      return;
+    }
+
+    row.classList.remove('error');
+    row.classList.add('success');
+  };
+
+  remove.onclick = () => {
+    input.value = '';
+    row.classList.remove('success', 'error');
+    sizeText.textContent = '';
+  };
+});
+
+function submitStep7() {
+  const requiredRows = document.querySelectorAll('.upload-row.required');
+  for (let row of requiredRows) {
+    if (!row.classList.contains('success')) {
+      alert('Please upload all required documents');
+      return;
+    }
+  }
+
+  if (!document.getElementById('finalRemarks').value.trim()) {
+    alert('Final remarks are required');
+    return;
+  }
+
+  if (!document.getElementById('declareCheck').checked) {
+    alert('Please accept the declaration');
+    return;
+  }
+
+  alert('Franchise application submitted successfully!');
+}

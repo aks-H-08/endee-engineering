@@ -69,7 +69,8 @@ label {
   margin: 14px 0 6px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px 12px;
   border-radius: 4px;
@@ -81,7 +82,8 @@ textarea {
   min-height: 90px;
 }
 
-input:invalid, textarea:invalid {
+input:invalid,
+textarea:invalid {
   border-color: #e06666;
 }
 
@@ -148,9 +150,187 @@ input:invalid, textarea:invalid {
   font-size: 13px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
+.note {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.upload-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 26px;
+}
+
+.upload-row {
+  background: #fde7c3;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.upload-row.success {
+  background: #dff3df;
+}
+.upload-row.error {
+  background: #ffe0e0;
+}
+
+.upload-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-pill {
+  background: #fff;
+  border: 1px solid #f1c36a;
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e39a10;
+  cursor: pointer;
+}
+
+.file-size {
+  font-size: 11px;
+  color: #555;
+}
+
+.remove-file {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+.declaration {
+  margin-top: 24px;
+  font-size: 13px;
+}
+
+.submit-btn {
+  margin-top: 26px;
+  padding: 12px 40px;
+  background: #e39a10;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ENHANCEMENTS ================= */
+
+/* LARGE SCREENS */
+@media (min-width: 1400px) {
+  .franchise-wrapper {
+    max-width: 1320px;
+  }
+}
+
+/* TABLETS & SMALL LAPTOPS */
+@media (max-width: 991px) {
   .franchise-layout {
     grid-template-columns: 1fr;
+  }
+
+  .franchise-wrapper {
+    padding: 50px 20px 90px;
+  }
+
+  .form-card {
+    padding: 26px;
+  }
+
+  .upload-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE DEVICES */
+@media (max-width: 767px) {
+  .franchise-intro h2 {
+    font-size: 22px;
+  }
+
+  .franchise-intro p {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .upload-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .upload-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+  .franchise-wrapper {
+    padding: 40px 14px 80px;
+  }
+
+  .upload-pill {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .file-size {
+    font-size: 10px;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  .guidelines p {
+    font-size: 12px;
   }
 }

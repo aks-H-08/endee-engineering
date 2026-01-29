@@ -189,23 +189,147 @@
                 </div>
 
                 <!-- STEP 7 -->
-                <div class="step">
-                    <h3>Franchise Scoring & Evaluation</h3>
+                <div class="step" id="step-7">
 
-                    <div class="upload-list">
-                        <div class="upload-item">Land Document (Required)</div>
-                        <div class="upload-item">EB Bill (Required)</div>
-                        <div class="upload-item">Factory Photos (Required)</div>
-                        <div class="upload-item">Road Access Photos (Required)</div>
+                    <h3>FRANCHISE SCORING & EVALUATION</h3>
+                    <p class="note">All the uploaded files should be maximum size 2 MB</p>
+
+                    <div class="upload-grid">
+
+                        <!-- LEFT COLUMN -->
+                        <div>
+                            <div class="upload-row required">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>Land ownership / lease document copy</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".pdf,.jpg,.png">
+                            </div>
+
+                            <div class="upload-row required">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>Latest EB bill & sanctioned load proof</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".pdf,.jpg,.png">
+                            </div>
+
+                            <div class="upload-row">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>Transformer details (if available)</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".pdf,.jpg,.png">
+                            </div>
+
+                            <div class="upload-row required">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>Compressor specifications & photos</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".pdf,.jpg,.png">
+                            </div>
+
+                            <div class="upload-row required">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>UPS / DG set specifications & photos</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".pdf,.jpg,.png">
+                            </div>
+
+                            <div class="upload-row required">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>Crane details with capacity proof</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".pdf,.jpg,.png">
+                            </div>
+                        </div>
+
+                        <!-- RIGHT COLUMN -->
+                        <div>
+                            <div class="upload-row required">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>Forklift / material handling equipment photos</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".jpg,.png">
+                            </div>
+
+                            <div class="upload-row required">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>Factory exterior & interior photos</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".jpg,.png">
+                            </div>
+
+                            <div class="upload-row required">
+                                <div class="upload-left">
+                                    <span class="file-icon">📄</span>
+                                    <span>Road access & frontage photos</span>
+                                </div>
+                                <div class="upload-right">
+                                    <button class="upload-pill">Upload</button>
+                                    <span class="file-size"></span>
+                                    <span class="remove-file">✕</span>
+                                </div>
+                                <input type="file" hidden accept=".jpg,.png">
+                            </div>
+
+                            <label class="remarks-label">Final Remarks</label>
+                            <textarea id="finalRemarks" required></textarea>
+                        </div>
                     </div>
 
-                    <label>Final Remarks</label>
-                    <textarea required></textarea>
+                    <div class="declaration">
+                        <label>
+                            <input type="checkbox" id="declareCheck" required>
+                            I hereby declare that the above information is true and correct.
+                        </label>
+                    </div>
 
-                    <label>
-                        <input type="checkbox" required>
-                        I declare that the above information is true and correct
-                    </label>
                 </div>
 
                 <!-- NAV -->
