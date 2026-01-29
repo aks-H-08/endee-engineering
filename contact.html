@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Endee Engineering </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic%7CLato:300,300italic,400,400italic,700,900%7CMerriweather:700italic">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/hero-banner.css">
+
+    <style>
+        .hero-banner {
+            background-image: url("../images/contact/contact-banner.png");
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <section class="hero-banner">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-strip small">
+                Contact Endee Engineering for Expert Sheet Metal Solutions
+            </div>
+
+            <div class="hero-strip large">
+                CONTACT US
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <!-- LEFT : FORM -->
+            <div class="contact-card animate-left">
+                <h3>Get in Touch</h3>
+                <p class="subtext">We’d love to hear from you. Please fill out this form.</p>
+
+                <form>
+                    <input type="text" placeholder="First Name *" required>
+                    <input type="text" placeholder="Company *" required>
+                    <input type="email" placeholder="Email *" required>
+                    <input type="tel" placeholder="Phone (optional)">
+                    <textarea placeholder="Your message..." required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- RIGHT : ADDRESS -->
+            <div class="contact-info animate-right">
+
+                <div class="info-block">
+                    <span class="icon">📍</span>
+                    <div>
+                        <h4>REGISTERED OFFICE ADDRESS</h4>
+                        <p>
+                            Endee Infrastructure & Engineering Pvt. Ltd.<br>
+                            49/1, BAAB Gandhi, II Main Road,<br>
+                            Gandhi Nagar, Adyar, Chennai – 600020<br>
+                            <strong>+91 98426 45565</strong><br>
+                            <a href="mailto:sales@endee-engg.in">sales@endee-engg.in</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <span class="icon">📍</span>
+                    <div>
+                        <h4>COIMBATORE</h4>
+                        <p>
+                            Endee Infrastructure & Engineering Pvt. Ltd.<br>
+                            2/232, Somanur Road,<br>
+                            Kaliappuram Rasipalayam,<br>
+                            Sulur, Coimbatore – 641402<br>
+                            <strong>+91 99448 60648</strong><br>
+                            <a href="mailto:info@endee-engg.in">info@endee-engg.in</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <span class="icon">📍</span>
+                    <div>
+                        <h4>BANGALORE</h4>
+                        <p>
+                            Endee Infrastructure & Engineering Pvt. Ltd.<br>
+                            Plot No 377 (Corner Plot), Sub-Layout,<br>
+                            Sompura I Stage, Nidavanda Hobli,<br>
+                            Nelamangala Taluk, Bangalore Rural – 562131<br>
+                            <strong>+91 98426 45565</strong><br>
+                            <a href="mailto:infoblr@endee-engg.in">infoblr@endee-engg.in</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Load Header
+        fetch("common/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("common/footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

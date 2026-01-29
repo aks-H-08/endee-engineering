@@ -1,0 +1,94 @@
+/* ================= HERO BANNER ================= */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  align-items: center;
+}
+
+/* DARK OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+/* CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* YELLOW STRIPS */
+.hero-strip {
+  display: inline-block;
+  background: #f7b500;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.hero-strip.small {
+  font-size: 14px;
+  padding: 8px 18px;
+}
+
+.hero-strip.large {
+  font-size: 42px;
+  padding: 14px 22px;
+  line-height: 1.15;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 991px) {
+  .hero-strip.large {
+    font-size: 34px;
+  }
+
+  .hero-content {
+    padding-left: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-banner {
+    min-height: 280px;
+    background-position: center;
+  }
+
+  .hero-strip.small {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .hero-strip.large {
+    font-size: 26px;
+    padding: 10px 14px;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .hero-strip.large {
+    font-size: 22px;
+  }
+}
