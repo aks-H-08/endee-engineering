@@ -1,0 +1,63 @@
+/* ================= EQUIPMENT SECTION ================= */
+.equipment-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 24px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* ROW */
+.equipment-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 140px;
+}
+
+/* reverse layout */
+.equipment-row.reverse {
+  direction: rtl;
+}
+.equipment-row.reverse > * {
+  direction: ltr;
+}
+
+/* IMAGE */
+.equipment-image img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.12);
+  transition: transform 0.6s ease;
+}
+
+.equipment-image:hover img {
+  transform: scale(1.03);
+}
+
+/* TEXT */
+.equipment-text {
+  max-width: 460px;
+}
+
+.equipment-text p {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: #444;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .equipment-row,
+  .equipment-row.reverse {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-bottom: 90px;
+    direction: ltr;
+  }
+
+  .equipment-text {
+    max-width: 100%;
+  }
+}
