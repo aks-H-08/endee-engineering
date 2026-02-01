@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Endee Engineering</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+
+    <!-- Fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic%7CLato:300,300italic,400,400italic,700,900%7CMerriweather:700italic"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/surface-coating-and-finishing.css" />
+    <link rel="stylesheet" href="css/hero-banner.css" />
+
+    <style>
+      .hero-banner {
+        background-image: url("./images/surface-coating-and-finishing/surface-coating-and-finishing-banner.png");
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <section class="hero-banner">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-strip small">
+                High-quality finishes that meet industrial standards
+            </div>
+
+            <div class="hero-strip large">
+                SURFACE COATING & FINISHING
+            </div>
+        </div>
+    </section>
+
+    <section class="surface-section">
+      <div class="surface-container">
+        <!-- LEFT CONTENT -->
+        <div class="surface-content animate-up">
+          <span class="section-tag">SURFACE COATING & FINISHING</span>
+
+          <p class="surface-text">
+            Surface Coating & Finishing services including painting, powder
+            coating, and anodizing to improve corrosion resistance, durability,
+            and appearance of metal components. Our controlled processes ensure
+            high-quality finishes that meet industrial standards and customer
+            requirements.
+          </p>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="surface-image animate-fade">
+          <img
+            src="images/surface-coating-and-finishing/surface-coating.png"
+            alt="Surface Coating & Finishing"
+          />
+        </div>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="surface-services">
+        <h4>OUR SERVICES</h4>
+
+        <div class="service-list">
+          <span class="service-pill">Powder Coating Finish</span>
+          <span class="service-pill">Anodizing Painting Finish</span>
+          <span class="service-pill">Steel Painting Finish</span>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Load Header
+      fetch("common/header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+
+      // Load Footer
+      fetch("common/footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
